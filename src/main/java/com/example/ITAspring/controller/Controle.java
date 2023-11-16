@@ -1,6 +1,7 @@
 package com.example.ITAspring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,9 +18,13 @@ public class Controle {
 
 
         // Metodo de cadastramento de Alunos
-        @PostMapping("/")
+        @PostMapping("/cadastro")
         public Aluno cadastrar(@RequestBody Aluno c){ //o requestbody esta esperando um objeto do tipo aluno que sera armazenado em 'c'
                 return acao.save(c);
         }
-    
+        
+        @GetMapping("/listar")
+        public Iterable<Aluno> todosAlunos(){
+                return acao.findAll();
+        }
 }
