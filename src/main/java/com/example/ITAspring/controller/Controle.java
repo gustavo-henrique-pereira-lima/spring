@@ -14,7 +14,7 @@ import com.example.ITAspring.model.Aluno;
 import com.example.ITAspring.model.Repositorio;
 
 @RestController   // Annotation de rotas
-@CrossOrigin(origins = "4200")  // evita o problema CORS e libera a comunicação com a API
+@CrossOrigin(origins = "*")  // evita o problema CORS e libera a comunicação com a API
 public class Controle {
 
         // instanciar objeto do tipo repositorio (cadastrar, selecionar e remover os alunos)
