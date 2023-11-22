@@ -11,7 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>ITAspring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ITAspring</name>
+	<packaging>jar</packaging>
+	<name>SPRING</name>
 	<description>Backend ITA</description>
 	<properties>
 		<java.version>17</java.version>
